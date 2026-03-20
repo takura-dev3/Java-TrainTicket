@@ -4,9 +4,9 @@ import java.sql.*;
 
 public class DatabaseHandler {
     
-    private final String URL = "jdbc:mysql://localhost:3306/TrainReservationDB";
+    private final String URL = "";
     private final String USER = "root"; 
-    private final String PASS = "your_password";
+    private final String PASS = "my_password";
 
     public void insertTicket(TrainTicket ticket) {
         String sql = "INSERT INTO tickets (passenger_name, destination, ticket_class, total_price) VALUES (?, ?, ?, ?)";
